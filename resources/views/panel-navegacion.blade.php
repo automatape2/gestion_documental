@@ -199,6 +199,39 @@
                     </flux:button>
                 </div>
             </div>
+
+            <!-- Control de Versiones -->
+            <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 p-6 hover:shadow-lg transition-shadow duration-200">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="flex-shrink-0">
+                        <flux:icon name="clock" class="w-8 h-8 text-teal-600 dark:text-teal-400" />
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                            {{ __('Control de Versiones') }}
+                        </h3>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                            {{ __('Seguimiento y gestión de versiones') }}
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <a href="{{ route('historial.versiones') }}" wire:navigate>
+                        <flux:button variant="ghost" class="w-full justify-start" size="sm">
+                            <flux:icon name="clock" class="w-4 h-4 mr-2" />
+                            {{ __('Historial de Versiones') }}
+                        </flux:button>
+                    </a>
+                    <flux:button variant="ghost" class="w-full justify-start" size="sm">
+                        <flux:icon name="document-duplicate" class="w-4 h-4 mr-2" />
+                        {{ __('Comparar Versiones') }}
+                    </flux:button>
+                    <flux:button variant="ghost" class="w-full justify-start" size="sm">
+                        <flux:icon name="arrow-uturn-left" class="w-4 h-4 mr-2" />
+                        {{ __('Restaurar Versión') }}
+                    </flux:button>
+                </div>
+            </div>
         </div>
 
         <!-- Sección de Acceso Rápido -->

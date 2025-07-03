@@ -19,6 +19,10 @@ Route::view('busqueda-avanzada', 'busqueda-avanzada')
     ->middleware(['auth', 'verified'])
     ->name('busqueda.avanzada');
 
+Route::view('historial-versiones', 'historial-versiones')
+    ->middleware(['auth', 'verified'])
+    ->name('historial.versiones');
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
