@@ -59,10 +59,12 @@
                     </div>
                 </div>
                 <div class="space-y-2">
-                    <flux:button variant="ghost" class="w-full justify-start" size="sm">
-                        <flux:icon name="magnifying-glass" class="w-4 h-4 mr-2" />
-                        {{ __('Búsqueda Global') }}
-                    </flux:button>
+                    <a href="{{ route('busqueda.avanzada') }}" wire:navigate>
+                        <flux:button variant="ghost" class="w-full justify-start" size="sm">
+                            <flux:icon name="magnifying-glass" class="w-4 h-4 mr-2" />
+                            {{ __('Búsqueda Global') }}
+                        </flux:button>
+                    </a>
                     <flux:button variant="ghost" class="w-full justify-start" size="sm">
                         <flux:icon name="funnel" class="w-4 h-4 mr-2" />
                         {{ __('Filtros Avanzados') }}

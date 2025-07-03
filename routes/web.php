@@ -15,6 +15,10 @@ Route::view('panel-navegacion', 'panel-navegacion')
     ->middleware(['auth', 'verified'])
     ->name('panel.navegacion');
 
+Route::view('busqueda-avanzada', 'busqueda-avanzada')
+    ->middleware(['auth', 'verified'])
+    ->name('busqueda.avanzada');
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
