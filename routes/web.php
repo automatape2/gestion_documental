@@ -23,6 +23,10 @@ Route::view('historial-versiones', 'historial-versiones')
     ->middleware(['auth', 'verified'])
     ->name('historial.versiones');
 
+Route::view('gestion-permisos', 'gestion-permisos')
+    ->middleware(['auth', 'verified'])
+    ->name('gestion.permisos');
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 

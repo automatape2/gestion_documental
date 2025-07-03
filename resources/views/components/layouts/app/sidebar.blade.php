@@ -17,6 +17,7 @@
                     <flux:navlist.item icon="squares-2x2" :href="route('panel.navegacion')" :current="request()->routeIs('panel.navegacion')" wire:navigate>{{ __('Panel de Navegación') }}</flux:navlist.item>
                     <flux:navlist.item icon="magnifying-glass" :href="route('busqueda.avanzada')" :current="request()->routeIs('busqueda.avanzada')" wire:navigate>{{ __('Búsqueda Avanzada') }}</flux:navlist.item>
                     <flux:navlist.item icon="clock" :href="route('historial.versiones')" :current="request()->routeIs('historial.versiones')" wire:navigate>{{ __('Historial de Versiones') }}</flux:navlist.item>
+                    <flux:navlist.item icon="key" :href="route('gestion.permisos')" :current="request()->routeIs('gestion.permisos')" wire:navigate>{{ __('Gestión de Permisos') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 

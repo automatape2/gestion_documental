@@ -127,10 +127,12 @@
                         <flux:icon name="users" class="w-4 h-4 mr-2" />
                         {{ __('Gestión de Usuarios') }}
                     </flux:button>
-                    <flux:button variant="ghost" class="w-full justify-start" size="sm">
-                        <flux:icon name="key" class="w-4 h-4 mr-2" />
-                        {{ __('Permisos y Roles') }}
-                    </flux:button>
+                    <a href="{{ route('gestion.permisos') }}" wire:navigate>
+                        <flux:button variant="ghost" class="w-full justify-start" size="sm">
+                            <flux:icon name="key" class="w-4 h-4 mr-2" />
+                            {{ __('Permisos y Roles') }}
+                        </flux:button>
+                    </a>
                     <flux:button variant="ghost" class="w-full justify-start" size="sm">
                         <flux:icon name="server" class="w-4 h-4 mr-2" />
                         {{ __('Configuración del Sistema') }}
