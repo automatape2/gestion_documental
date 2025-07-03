@@ -13,11 +13,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
+        // Crear usuarios de prueba para el sistema de gestión documental
+        
+        // Administrador del sistema
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Administrador Sistema',
+            'email' => 'admin@gestiondocumental.com',
         ]);
+
+        // Usuario de prueba
+        User::factory()->create([
+            'name' => 'Usuario Prueba',
+            'email' => 'usuario@gestiondocumental.com',
+        ]);
+
+        // Generar usuarios adicionales para pruebas
+        // User::factory(5)->create();
     }
 }
