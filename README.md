@@ -22,7 +22,7 @@ Un sistema de gestión documental desarrollado con Laravel y Livewire que permit
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone git@github.com:automatape2/gestion_documental.git
 cd gestion_documental
 ```
 
